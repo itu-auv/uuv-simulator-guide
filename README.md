@@ -6,13 +6,18 @@ Bu kılavuzun amacı, gerçekçi bir fizik motoru ile simülasyon ortamı oluşt
 hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
 
 ## İçerik
-- [UUV Simülatör Genel Bakış](uuv-basics.md)
+- [UUV Simülatör Genel Bakış ve Kurulum](uuv-basics.md)
 - [Yeni Araç Oluşturulması](create-vehicle.md)
+  - [Statik ve Dinamik Parametrelerin Konfigürasyonu](setup-vehicle-parameters.md)
+  - [İticilerin Konfigürasyonu](setup-thrusters.md)
+  - [Sensörlerin Konfigürasyonu](setup-sensors.md)
 - [Teknofest Simülasyon Ortamı Kurulumu ve Çalıştırılması](simulation.md)
-
+  - [İticilerin Kontrol Edilmesi](thruster-commanding.md)
 ## Contribution
-Tüm görüş & önerileriniz, konu hakkındaki sorularınız, katkılarınız veya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
-[issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz.
+Tüm görüş & önerileriniz, konu hakkındaki sorularınız ve ya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
+[issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz. UUV Simülatör kullanımı 
+konusunda tecrübeniz varsa ve ya katkıda bulunmak istiyorsanız, 
+[senceryazici@gmail.com](mailto:senceryazici@gmail.com) adresine mail atabilirsiniz. 
 
 ## License
 MIT, detaylar için [LICENSE](LICENSE)

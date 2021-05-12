@@ -13,6 +13,8 @@ hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
   - [Sensörlerin Konfigürasyonu](setup-sensors.md)
 - [Teknofest Simülasyon Ortamı Kurulumu ve Çalıştırılması](simulation.md)
   - [İticilerin Kontrol Edilmesi](thruster-commanding.md)
+  - [Sensörlerden Veri Alınması](sensor-data.md)
+
 ## Contribution
 Tüm görüş & önerileriniz, konu hakkındaki sorularınız ve ya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
 [issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz. UUV Simülatör kullanımı 

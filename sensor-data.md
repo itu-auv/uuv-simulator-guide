@@ -1,0 +1,1 @@
+# Sensörlerden Veri Alınması

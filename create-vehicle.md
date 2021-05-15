@@ -68,5 +68,95 @@ Fakat bu zor bir işlem olduğundan, bu parametreler için **Turkuaz** aracımı
 kullanabilirsiniz.
 
 
-<!-- TODO (aerenkaradag): Create new vehicle -->
-## 
+## ARAÇ OLUŞTURMA
+1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Kurulu değilse;
+
+   ```
+   sudo apt install ros-melodic-uuv-simulator
+   ```
+
+   (`melodic` yerine `kinetic` veya `lunar` yazabilirsiniz)
+
+*Simülasyon ortamını kurmak için gerekli adımları takip etmişseniz devam edebilirsiniz, etmediyseniz [link]( https://github.com/itu-auv/teknofest-simulator ) gidin*
+
+
+2. ```
+   # Eksik paketler çalışma alanına klonlanıp yerele kopyalanır
+   cd ~/catkin_ws/src
+   git clone https://github.com/uuvsimulator/uuv_simulator.git
+   cd uuv_simulator/uuv_assistants
+   sudo cp -r ./templates/ /opt/ros/melodic/share/uuv_assistants/
+   
+   # Paket tekrar derlenir
+   cd ~/catkin_ws
+   catkin build
+   # Paket terminale tanıtılır ve kurulum tamamlanır
+   source devel/setup.bash
+   ```
+
+3. ```
+   # Araç oluşturulur
+   cd ~/catkin_ws/src
+   rosrun uuv_assistants create_new_robot_model --robot_name <aracinizin_ismi>
+   # src adlı dosyada aracınızın tanım dosyası (aracinizin_ismi_description) oluşacaktır
+   ```
+
+   Örnek: `rosrun uuv_assistants create_new_robot_model --robot_name test_robot`
+
+   Doğru çıktı şöyle olmalı: 
+
+   ```
+   eren@erenkaradag:~/catkin_ws/src$ rosrun uuv_assistants create_new_robot_model --robot_name test_robot
+   Create new catkin package for a UUV robot description
+   	Robot name = test_robot
+   	Catkin package name = test_robot_description
+   Creating the catkin package...
+   Created file test_robot_description/CMakeLists.txt
+   Created file test_robot_description/package.xml
+   Successfully created files in /home/eren/simulation_ws/src/test_robot_description. Please adjust the values in package.xml.
+   Done!
+   Creating folder=test_robot_description/launch
+   Creating file:
+   	test_robot_description/launch/upload.launch
+   Creating folder=test_robot_description/meshes
+   Creating file:
+   	test_robot_description/meshes/README.md
+   Creating folder=test_robot_description/urdf
+   Creating file:
+   	test_robot_description/urdf/gazebo.xacro
+   Creating file:
+   	test_robot_description/urdf/actuators.xacro
+   Creating file:
+   	test_robot_description/urdf/base.xacro
+   Creating file:
+   	test_robot_description/urdf/sensors.xacro
+   Creating file:
+   	test_robot_description/urdf/snippets.xacro
+   Creating folder=test_robot_description/robots
+   Creating file:
+   	test_robot_description/robots/default.xacro
+   Robot description package <test_robot_description> create successfully
+   ```
+
+   *Not:*
+
+- ```
+  [rosrun] Couldn't find executable named create_new_robot_model below /opt/ros/melodic/share/uuv_assistants
+  ```
+
+  veya
+
+- ```
+  Traceback (most recent call last):
+    File "/opt/ros/melodic/lib/uuv_assistants/create_new_robot_model", line 59, in <module>
+      for d in os.listdir(template_path):
+  OSError: [Errno 2] No such file or directory: '/opt/ros/melodic/share/uuv_assistants/templates/robot_model'
+  ```
+
+  hatalarını alırsanız 2. adımı yaptığınızdan emin olun.
+  
+### Aracınızın tanım dosyası
+aracinizin_ismi_description....
+
+<!-- TODO (aerenkaradag): Add description file flowchart and explain it -->
+

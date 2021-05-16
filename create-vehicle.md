@@ -75,21 +75,16 @@ kullanabilirsiniz.
    sudo apt install ros-melodic-uuv-simulator
    ```
 
-   (`melodic` yerine `kinetic` veya `lunar` yazabilirsiniz)
-
-*Simülasyon ortamını kurmak için gerekli adımları takip etmişseniz devam edebilirsiniz, etmediyseniz [link]( https://github.com/itu-auv/teknofest-simulator ) gidin*
-
 
 2. ```
    # Eksik paketler çalışma alanına klonlanıp yerele kopyalanır
    cd ~/catkin_ws/src
    git clone https://github.com/uuvsimulator/uuv_simulator.git
-   cd uuv_simulator/uuv_assistants
-   sudo cp -r ./templates/ /opt/ros/melodic/share/uuv_assistants/
+   sudo cp -r .uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
    
    # Paket tekrar derlenir
    cd ~/catkin_ws
-   catkin build
+   catkin build -- uuv_assistants
    # Paket terminale tanıtılır ve kurulum tamamlanır
    source devel/setup.bash
    ```
@@ -101,9 +96,9 @@ kullanabilirsiniz.
    # src adlı dosyada aracınızın tanım dosyası (aracinizin_ismi_description) oluşacaktır
    ```
 
-   Örnek: `rosrun uuv_assistants create_new_robot_model --robot_name test_robot`
+   *Örnek:* `rosrun uuv_assistants create_new_robot_model --robot_name test_robot`
 
-   Doğru çıktı şöyle olmalı: 
+   *Doğru çıktı şöyle olmalı:*
 
    ```
    eren@erenkaradag:~/catkin_ws/src$ rosrun uuv_assistants create_new_robot_model --robot_name test_robot

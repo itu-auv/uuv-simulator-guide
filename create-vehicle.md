@@ -82,7 +82,7 @@ kullanabilirsiniz.
    git clone https://github.com/uuvsimulator/uuv_simulator.git
    sudo cp -r .uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
    
-   # Paket tekrar derlenir
+   # Paket derlenir
    cd ~/catkin_ws
    catkin build -- uuv_assistants
    # Paket terminale tanıtılır ve kurulum tamamlanır

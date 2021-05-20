@@ -151,7 +151,12 @@ kullanabilirsiniz.
   hatalarını alırsanız 2. adımı yaptığınızdan emin olun.
   
 ### Aracınızın tanım dosyası
+
+![chart_s](https://user-images.githubusercontent.com/84081125/118955306-3fe9f780-b967-11eb-9d5d-85313b591446.png)
+
+
 aracinizin_ismi_description....
+
 
 <!-- TODO (aerenkaradag): Add description file flowchart and explain it -->
 

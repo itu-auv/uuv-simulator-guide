@@ -4,7 +4,7 @@
 sudo apt install ros-melodic-uuv-simulator
 ```
 <!-- look here @senceryazici -->
-<!-- (@senceryazici) Bu hatayı ben almıştım ama biraz nadir bir hata (sanırım başka bir şeyin kurulumunu yarım bıraktığım içinmiş) istiyosan kaldıralım -->
+<!-- Bu hatayı ben almıştım ama biraz nadir bir hata (sanırım başka bir şeyin kurulumunu yarım bıraktığım içinmiş) istiyosan kaldıralım -->
 - ​	`N: '/etc/apt/sources.list.d/' dizinindeki 'example-example.list.save' dosyası geçersiz bir dosya uzantısı olduğu için yok sayılıyor`  hatası verirse;
 
   `sudo sh -c "echo 'Dir::Ignore-Files-Silently:: \"(.save|.distupgrade)$\";' > /etc/apt/apt.conf.d/99ignoresave"`

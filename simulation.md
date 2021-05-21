@@ -12,7 +12,13 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 
 # Teknofest simülasyon ortamı için teknofest_simulator paketini klonlayalım.
+# Not: eğer clone işlemi sırasında hata alırsanız, bu bilgisayarınızdaki ssh anahtarını
+# github hesabınıza eklemediğinizden kaynaklanmaktadır. Ayarlar bölümünden ekleyin veya
+# git clone https://github.com/itu-auv/teknofest-simulator.git 
+# çalıştırın. 
 git clone git@github.com:itu-auv/teknofest-simulator.git
+# git clone https://github.com/itu-auv/teknofest-simulator.git 
+
 
 # Catkin build komutu çalıştırılırken workspace içinde bulunulmalıdır,
 # bu sebeple workspace klasörüne tekrar geri dönün
@@ -33,6 +39,36 @@ roslaunch teknofest_simulator start.launch
 ## Simülasyon Ortamına Aracın Yüklenmesi
 Bu adımda daha önceki adımlarda test amaçlı oluşturmuş olduğumuz aracı yüklemek için aşağıdaki komut çağırılır.
 Yine önceki adımlarda da olduğu gibi `<robot_name>` kısmı, aracınıza verdiğiniz isim ile değiştirilmelidir.
+
+Eğer aracınızın sensör ve itici tanımlamalarında, `t100_thruster`, `t200_thruster`, `xsens_mti_g710` vs vs gibi sensör/iticileri kullandıysanız
+bunların tanımlanmış olduğu [ituauv-uuv-descriptions](https://github.com/itu-auv/ituauv-uuv-descriptions) paketini de workspace'inize indirmiş olmanız gerekir.
+Bunun için,
+```sh
+# oluşturduğunuz workspace'in source klasörüne gidin
+cd ~/catkin_ws/src
+
+# Teknofest simülasyon ortamı için teknofest_simulator paketini klonlayalım.
+git clone https://github.com/itu-auv/ituauv-uuv-descriptions.git
+
+# Catkin build komutu çalıştırılırken workspace içinde bulunulmalıdır,
+# bu sebeple workspace klasörüne tekrar geri dönün
+cd ~/catkin_ws
+
+# Paketi derleyin
+catkin build -- ituauv_uuv_descriptions
+
+# Paketi terminalimize tanıtıyoruz
+source devel/setup.bash
+```
+
+```sh
+# Daha sonrasında artık <robot_name>_description paketimizi derleyebiliriz
+catkin build -- <robot_name>_description
+
+# Paketi terminalimize tanıtıyoruz
+source devel/setup.bash
+```
+Yukarıdaki işlemler tamamlandıktan sonra 
 
 ```sh
 roslaunch <robot_name>_description upload.launch

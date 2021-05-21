@@ -74,12 +74,14 @@ kullanabilirsiniz.
 1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Kurulu değilse;
 
    ```
-   sudo apt install ros-melodic-uuv-simulator
+   sudo apt install ros-melodic-desktop-full
    ```
 
-
 2. ```
-   # Eksik paketler çalışma alanına klonlanıp yerele kopyalanır
+   # uuv_simulator (Unmanned Underwater Vehicle Simulator) paket seti yüklenir
+   sudo apt install ros-melodic-uuv-simulator
+   
+   # Gerekli paketler çalışma alanına klonlanıp yerele kopyalanır
    cd ~/catkin_ws/src
    git clone https://github.com/uuvsimulator/uuv_simulator.git
    sudo cp -r .uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/

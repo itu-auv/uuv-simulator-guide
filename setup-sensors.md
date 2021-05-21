@@ -78,3 +78,5 @@
   </bluerobotics_ping_sonar>
 </robot>
 ```
+
+[Sonraki adımda](simulation.md) simülasyon ortamının oluşturulması işlenecektir

@@ -1,3 +1,5 @@
+<!-- TODO: birini seç ve diğerini düzelt <robot_name> veya <aracinizin_ismi> -->
+
 # Yeni Araç Oluşturulması
 
 Bu bölümde `uuv_simulator` kullanarak yeni bir araç oluşturacağız. Burada araca ait bazı parametrelere

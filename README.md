@@ -16,18 +16,16 @@ hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
   - [Sensörlerden Veri Alınması](sensor-data.md)
 - [Özet](summary.md)
 
-## Contribution
+## Contribution / Katkı
 Tüm görüş & önerileriniz, konu hakkındaki sorularınız ve ya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
 [issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz. UUV Simülatör kullanımı 
 konusunda tecrübeniz varsa ve ya katkıda bulunmak istiyorsanız, 
 [senceryazici@gmail.com](mailto:senceryazici@gmail.com) adresine mail atabilirsiniz. 
 
-## License
+## Lisans
 MIT, detaylar için [LICENSE](LICENSE)
 
-## Authors
+## Yazarlar
 - Sencer Yazıcı - [senceryazici@gmail.com](mailto:senceryazici@gmail.com)
-- Hidayet Ersin Dursun
 - Ali Eren Karadag
-- Alp Eren
 - Zeynep Uyar

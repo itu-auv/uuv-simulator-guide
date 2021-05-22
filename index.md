@@ -1,5 +1,5 @@
 # Teknofest'21 UUV Simülatör Kılavuzu
-Teknofest 2021 yarışması için [İTÜ AUV Takımı](https://auv.itu.edu.tr) olarak hazırlamış olduğumuz `uuv_simulator` kılavuzudur. Bu 
+[Teknofest 2021](https://www.teknofest.org/) İnsansız Sualtı Sistemleri Yarışması için [İTÜ AUV Takımı](https://auv.itu.edu.tr) olarak hazırlamış olduğumuz `uuv_simulator` kılavuzudur. Bu 
 kılavuzda, araç oluşturmaktan simülasyon ortamı oluşturmaya ve kullanımına kadar bir çok detay anlatılmakdadır. 
 
 Bu kılavuzun amacı, gerçekçi bir fizik motoru ile simülasyon ortamı oluşturmak ve burada aracın üzerindeki hem hidrostatik hem de 
@@ -18,7 +18,7 @@ hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
   - [Sensörlerden Veri Alınması](sensor-data.md)
 - [Özet](summary.md)
 
-## Contribution / Katkı
+## Katkı
 Tüm görüş & önerileriniz, konu hakkındaki sorularınız veya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
 [issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz. UUV Simülatör kullanımı 
 konusunda tecrübeniz varsa veya katkıda bulunmak istiyorsanız, 

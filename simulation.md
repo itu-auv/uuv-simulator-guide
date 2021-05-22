@@ -68,6 +68,14 @@ catkin build -- <robot_name>_description
 # Paketi terminalimize tanıtıyoruz
 source devel/setup.bash
 ```
+Bu noktaya gelindiğinde
+`catkin_ws/src/` klasörü altında 3 paket bulunması gerekmektedir
+```
+teknofest-simulator/
+ituauv-uuv-descriptions/
+<robot_name>_description/
+```
+
 Yukarıdaki işlemler tamamlandıktan sonra 
 
 ```sh

@@ -1,4 +1,7 @@
 # Özet
+[bir önceki adıma](sensor-data.md) gidin.
+[anasayfaya](index.md) dönün.
+
 
 Bu klavuzda İTÜ AUV Takımı olarak `uuv_simulator` kullanarak, fizik simülasyonu yapılan bir simülasyon ortamında, 
 bir sualtı aracı oluşturabilmek, bunun hidrostatik ve hidrodinamik etkilerini gösterebilmek ve `uuv_simulator` 

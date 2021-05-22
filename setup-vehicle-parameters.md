@@ -89,10 +89,10 @@ Eğer elinizde bulunuyorsa `3x3` boyutundaki inertia matrisini (ihmal edilebilec
 Yine `urdf/base.xacro` içindeki 
 
 ```xml
-<xacro:property name="visual_mesh_file" value="file://$(find new_ocean_description)/meshes/vehicle.dae"/>
+<xacro:property name="visual_mesh_file" value="file://$(find <robot_name>_description)/meshes/vehicle.dae"/>
 
 
-<xacro:property name="collision_mesh_file" value="file://$(find new_ocean_description)/meshes/vehicle.stl"/>
+<xacro:property name="collision_mesh_file" value="file://$(find <robot_name>_description)/meshes/vehicle.stl"/>
 ```
 satırlarında `visual_mesh_file`(Görsel 3D Model) ve `collision_mesh_file`(Çarpışma geometrisi, visual_mesh_file ile aynı olabilir.)
 dosyalarının dosya yolu belirtilmektedir. Burada, `meshes/` klasörü altında,

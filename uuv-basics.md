@@ -26,3 +26,5 @@ Unmanned Underwater Vehicle Simulator, ROV'ler  ve AUV'ler gibi insansız su alt
    # Paket terminale tanıtılır ve kurulum tamamlanır
    source devel/setup.bash
    ```
+
+[Sonraki adımda](create-vehicle.md) simülasyona aracımızı eklemeye başlayacağız.

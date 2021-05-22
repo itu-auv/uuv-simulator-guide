@@ -1,6 +1,6 @@
 # Teknofest'21 UUV Simülatör Kılavuzu
 
-<img src="images/yukardan.jpg" alt="alt text" width="840" height="480">
+<img src="images/pool1.jpg" alt="alt text" width="840" height="480">
 
 [Teknofest 2021](https://www.teknofest.org/) İnsansız Sualtı Sistemleri Yarışması için [İTÜ AUV Takımı](https://auv.itu.edu.tr) olarak hazırlamış olduğumuz `uuv_simulator` kılavuzudur. Bu 
 kılavuzda, araç oluşturmaktan simülasyon ortamı oluşturmaya ve kullanımına kadar bir çok detay anlatılmakdadır. 

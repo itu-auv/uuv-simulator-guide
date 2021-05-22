@@ -82,13 +82,13 @@ Araç oluşturulduktan sonra bu kaynak kodu silebiliriz.
    # Eğer oluşturmadıysanız 
    mkdir -p ~/catkin_ws/src 
    
-   # ~/catkin_ws/src doysa yoluna gidilir
+   # ~/catkin_ws/src dosya yoluna gidilir
    cd ~/catkin_ws/src
    
    # uuv_assistants için paket çalışma alanına klonlanır
    git clone https://github.com/uuvsimulator/uuv_simulator.git
    
-   # Bashedilen sorunun çözümüne yönelik aşağıdaki komut çalıştırılır.
+   # Bahsedilen sorunun çözümüne yönelik aşağıdaki komut çalıştırılır.
    sudo cp -r uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
    
    # sonrasında kaynak kod silinebilir

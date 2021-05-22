@@ -182,6 +182,7 @@ Araç oluşturulduktan sonra bu kaynak kodu silebiliriz.
     └── snippets.xacro
 ```
 
-![chart_s](https://user-images.githubusercontent.com/84081125/118955306-3fe9f780-b967-11eb-9d5d-85313b591446.png)
+![flowc](https://user-images.githubusercontent.com/84081125/119212268-da5d4e80-babf-11eb-931b-be5798faec17.png)
+
 
 [Bir sonraki adımda](setup-vehicle-parameters.md) statik ve dinamik parametrelerin konfigürasyonu işlenecektir.

@@ -8,7 +8,7 @@ Bu adımda simülasyon ortamının kurulumu & çalıştırılması anlatılacakt
 
 ## Simülasyon Ortamının Oluşturulması
 
-<img src="images/yandan.png" alt="alt text" width="950" height="540">
+<img src="images/pool2.png" alt="alt text" width="950" height="540">
 
 Teknofest 2021 İnsansız Sualtı Sistemleri Yarışması için hazırladığımız simülasyon ortamını indirmek için aşağıdakı komutlar çalıştırılmalıdır.
 ```sh

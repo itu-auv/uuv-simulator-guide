@@ -161,6 +161,24 @@ Araç oluşturulduktan sonra bu kaynak kodu silebiliriz.
 
 `uuv_assistants` paketindeki `create_new_robot_model` scripti çalıştırıldıktan sonra `~/catkin_ws/src` klasörünün içinde `<robot_name>_description` dosyası oluşacaktır. Oluşturulan dosyanın içeriği aşağıdaki şekildedir.
 
+```
+.
+├── CMakeLists.txt
+├── launch
+│   └── upload.launch
+├── meshes
+│   └── README.md
+├── package.xml
+├── robots
+│   └── default.xacro *
+└── urdf
+    ├── actuators.xacro
+    ├── base.xacro *
+    ├── gazebo.xacro *
+    ├── sensors.xacro
+    └── snippets.xacro
+```
+
 ![chart_s](https://user-images.githubusercontent.com/84081125/118955306-3fe9f780-b967-11eb-9d5d-85313b591446.png)
 
 [Bir sonraki adımda](setup-vehicle-parameters.md) statik ve dinamik parametrelerin konfigürasyonu işlenecektir.

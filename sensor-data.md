@@ -15,7 +15,7 @@ Bu tanımlamada, sensörden elde edilen basınç değeri `/<robot_name>/sensors/
 
 ## Basınç Sensörü
 ```yml
-topic: `/<robot_name>/sensors/pressure`
+topic: /<robot_name>/sensors/pressure
 mesaj tipi: sensor_msgs/FluidPressure
 Açıklama: Basınç verisi
 ```

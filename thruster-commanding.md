@@ -45,13 +45,13 @@ rostopic pub /<robot_name>/thrusters/<index>/input uuv_gazebo_ros_plugins_msgs/F
   frame_id: ''
 data: 1700.0"
 ```
-çalıştırılabilir, böylece `<index>` numaralı itici, 1700 PWM girişi ile dönmeye başlayacak ve buna karşılık bir kuvvet üretecektir, örneğin T100 model iticiler için bu kuvvet değeri XXX olacaktır.
+çalıştırılabilir, böylece `<index>` numaralı itici, 1700 PWM girişi ile dönmeye başlayacak ve buna karşılık bir kuvvet üretecektir, örneğin T100 model iticiler için bu kuvvet değeri 10.3005 olacaktır.
 
 
 ## uuv_thruster_manager Kullanımı
 Araç üstünde bulunan `<N>` adet iticinin bu şekilde kullanımı yerine, uuv simulator'ün `thruster_manager`'ı kullanılabilir.
 
-Bunun için bir itici konfigürasyonu/parametreleri sağlamak gerekmektedir.
+Bunun için bir itici konfigürasyonu/parametreleri sağlamak gerekmektedir. `<robot_name>_description/config/t100_thruster_manager.yaml` içindeyken;
 
 ```yaml
 thruster_manager:
@@ -73,10 +73,10 @@ Buradaki `max_thrust`, iticinin sağlayabileceki maksimum kuvveti, `timeout`, it
 
 
 
-Yukarıdaki parametreler iticiye ait parametreler iken bir de `Thruster Allocation Matrix(TAM)` ve ya `İtici Yerleşim Matrisi (İYM)` belirtilmelidir, bunun için `tam.yaml` içerisinde, `<N>` itici sayısını temsil etmek üzere
+Yukarıdaki parametreler iticiye ait parametreler iken bir de `Thruster Allocation Matrix(TAM)` ve ya `İtici Yerleşim Matrisi (İYM)` belirtilmelidir, bunun için `<robot_name>_description/config/tam.yaml` içerisinde, `<N>` itici sayısını temsil etmek üzere
 `6xN` boyutunda bir matris tanımlanmalıdır. 
 
-`N=8` olan bir sistem için örnek bir yerleşim matrisi aşağıda verilmiştir.
+`N=6` olan bir sistem için örnek bir yerleşim matrisi aşağıda verilmiştir.
 
 ```yaml
 tam:

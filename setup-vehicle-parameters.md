@@ -1,4 +1,7 @@
 # Statik ve Dinamik Parametrelerin Belirlenmesi
+[bir önceki adıma](create-vehicle.md) gidin.
+[anasayfaya](index.md) dönün.
+
 Bu bölümde araç üzerine etkiyen hidrostatik ve hidrodinamik etkilerin belirtildiği parametrelerin konfigürasyonu anlatılacaktır.
 
 

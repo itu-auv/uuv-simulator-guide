@@ -96,7 +96,7 @@ tanımlasanız dahi, 3D modellerini orada belirtebilirsiniz.
 
 ## Hidrodinamik Etkiler
 `urdf/gazebo.xacro` altındaki,
-```
+```xml
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <!-- Yüzerlik merkezi koordinatları -->

@@ -21,5 +21,6 @@ _Bilgi paylaştıkça çoğalır_
 
 
 <img src="https://assets.gitlab-static.net/uploads/-/system/group/avatar/3266773/logo.png?width=64"/>
-[twitter](https://twitter.com/ituauvteam) [instagram](https://www.instagram.com/ituauvteam) [linkedin](https://www.linkedin.com/company/itu-auv-team)
-
+[twitter](https://twitter.com/ituauvteam) 
+[instagram](https://www.instagram.com/ituauvteam) 
+[linkedin](https://www.linkedin.com/company/itu-auv-team)

@@ -18,7 +18,7 @@ Unmanned Underwater Vehicle Simulator, ROV'ler  ve AUV'ler gibi insansız su alt
    # Gerekli paketler çalışma alanına klonlanıp yerele kopyalanır
    cd ~/catkin_ws/src
    git clone https://github.com/uuvsimulator/uuv_simulator.git
-   sudo cp -r .uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
+   sudo cp -r uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
    
    # Paket derlenir
    cd ~/catkin_ws

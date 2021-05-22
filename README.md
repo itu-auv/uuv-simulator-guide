@@ -5,6 +5,8 @@ kılavuzda, araç oluşturmaktan simülasyon ortamı oluşturmaya ve kullanımı
 Bu kılavuzun amacı, gerçekçi bir fizik motoru ile simülasyon ortamı oluşturmak ve burada aracın üzerindeki hem hidrostatik hem de 
 hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
 
+[Özeti](summary.md) okuyun 
+
 ## İçerik
 - [UUV Simülatör Genel Bakış ve Kurulum](uuv-basics.md)
 - [Yeni Araç Oluşturulması](create-vehicle.md)

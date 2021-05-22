@@ -9,7 +9,6 @@ Bu adımda simülasyon ortamının kurulumu & çalıştırılması anlatılacakt
 ## Simülasyon Ortamının Oluşturulması
 
 <img src="images/yandan.jpg" alt="alt text" width="950" height="540">
-<img src="https://raw.githubusercontent.com/itu-auv/uuv-simulator-guide/main/images/yandan.png" width=80% height=80%>
 
 Teknofest 2021 İnsansız Sualtı Sistemleri Yarışması için hazırladığımız simülasyon ortamını indirmek için aşağıdakı komutlar çalıştırılmalıdır.
 ```sh

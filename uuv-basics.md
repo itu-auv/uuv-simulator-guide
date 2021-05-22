@@ -2,6 +2,8 @@
 ## uuv_simulator
 Unmanned Underwater Vehicle Simulator, ROV'ler  ve AUV'ler gibi insansız su altı araçlarının simülasyonu için gerekli olan Gazebo ve ROS'a dayalı çok kullanışlı bir paket setidir.
 
+<!-- buraya foto eklemeliyiz bence @senceryazici -->
+
 ## Kurulum
 1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Rehberimiz `distro` olarak `melodic` kullanılarak oluşturulmuştur ve Gazebo uygulaması `ros-melodic-desktop-full` versiyonuyla birlikte gelmektedir. Kurulu değilse;
 

@@ -7,7 +7,10 @@ Bu adımda simülasyon ortamının kurulumu & çalıştırılması anlatılacakt
 
 
 ## Simülasyon Ortamının Oluşturulması
-Teknofest Sualtı yarışması için hazırladığımız simülasyon ortamını indirmek için aşağıdakı komutlar çalıştırılmalıdır
+
+![Ekran Görüntüsü - 2021-05-22 15-15-51](https://user-images.githubusercontent.com/84081125/119228894-e677f900-bb1d-11eb-8fad-69367028fbe0.png)
+
+Teknofest 2021 İnsansız Sualtı Sistemleri Yarışması için hazırladığımız simülasyon ortamını indirmek için aşağıdakı komutlar çalıştırılmalıdır.
 ```sh
 # catkin workspace oluşturmadıysanız oluşturun
 mkdir -p ~/catkin_ws/src

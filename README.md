@@ -19,9 +19,9 @@ hidrodinamik etkileri gerçeğe yakın şekilde simüle etmektir.
 - [Özet](summary.md)
 
 ## Contribution / Katkı
-Tüm görüş & önerileriniz, konu hakkındaki sorularınız ve ya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
+Tüm görüş & önerileriniz, konu hakkındaki sorularınız veya yanlışlık olduğunu düşündüğünüz bölümler için bu repo'nun 
 [issues](https://github.com/itu-auv/uuv-simulator-guide/issues) bölümünü kullanabilirsiniz. UUV Simülatör kullanımı 
-konusunda tecrübeniz varsa ve ya katkıda bulunmak istiyorsanız, 
+konusunda tecrübeniz varsa veya katkıda bulunmak istiyorsanız, 
 [senceryazici@gmail.com](mailto:senceryazici@gmail.com) adresine mail atabilirsiniz. 
 
 ## Lisans

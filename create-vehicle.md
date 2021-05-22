@@ -68,32 +68,34 @@ Fakat bu zor bir işlem olduğundan, bu parametreler için **Turkuaz** aracımı
 kullanabilirsiniz.
 
 
-## ARAÇ OLUŞTURMA
-<!-- uuv-basics.md'e taşındı ???
-1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Rehberimiz `distro` olarak `melodic` kullanılarak oluşturulmuştur ve Gazebo uygulaması `ros-melodic-desktop-full` versiyonuyla birlikte gelmektedir. Kurulu değilse;
+## Yeni Araç Oluşturma
 
-   ```
-   sudo apt install ros-melodic-desktop-full
-   ```
+`uuv_simulator` apt server üzerinden yayımlanan son versiyonunda, `uuv_assistants` paketinde bir [sorun](https://github.com/uuvsimulator/uuv_simulator/issues/385)
+olduğundan dolayı, sadece aracı oluştururken, `uuv_simulator` kaynak kodunu bilgisayarımıza çekmemiz gerekmektedir.
+Araç oluşturulduktan sonra bu kaynak kodu silebiliriz.
 
-2. ```
+-  ```
    # uuv_simulator paket seti yüklenir
    sudo apt install ros-melodic-uuv-simulator
    
-   # Gerekli paketler çalışma alanına klonlanıp yerele kopyalanır
-   cd ~/catkin_ws/src
-   git clone https://github.com/uuvsimulator/uuv_simulator.git
-   sudo cp -r .uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
    
-   # Paket derlenir
-   cd ~/catkin_ws
-   catkin build -- uuv_assistants
-   # Paket terminale tanıtılır ve kurulum tamamlanır
-   source devel/setup.bash
+   # Eğer oluşturmadıysanız 
+   mkdir -p ~/catkin_ws/src 
+   
+   # ~/catkin_ws/src doysa yoluna gidilir
+   cd ~/catkin_ws/src
+   
+   # uuv_assistants için paket çalışma alanına klonlanır
+   git clone https://github.com/uuvsimulator/uuv_simulator.git
+   
+   # Bashedilen sorunun çözümüne yönelik aşağıdaki komut çalıştırılır.
+   sudo cp -r uuv_simulator/uuv_assistants/templates/ /opt/ros/melodic/share/uuv_assistants/
+   
+   # sonrasında kaynak kod silinebilir
+   rm -rf uuv_simulator
    ```
 
-3. ??? -->
-   `uuv_simulator` kurulumu yapıldıktan sonra aşağıdaki kodla aracınızın tanım dosyası oluşturulur.
+-  `uuv_simulator` kurulumu yapıldıktan sonra aşağıdaki kodla aracınızın tanım paketi oluşturulur.
    
    ```
    cd ~/catkin_ws/src
@@ -105,7 +107,7 @@ kullanabilirsiniz.
    *Doğru çıktı şöyle olmalı:*
 
    ```
-   eren@erenkaradag:~/catkin_ws/src$ rosrun uuv_assistants create_new_robot_model --robot_name test_robot
+   username@pc:~/catkin_ws/src$ rosrun uuv_assistants create_new_robot_model --robot_name test_robot
    Create new catkin package for a UUV robot description
    	Robot name = test_robot
    	Catkin package name = test_robot_description
@@ -139,24 +141,25 @@ kullanabilirsiniz.
 
    *Not:*
 
-- ```
-  [rosrun] Couldn't find executable named create_new_robot_model below /opt/ros/melodic/share/uuv_assistants
-  ```
+    - ```
+      [rosrun] Couldn't find executable named create_new_robot_model below /opt/ros/melodic/share/uuv_assistants
+      ```
 
-  veya
+      veya
 
-- ```
-  Traceback (most recent call last):
-    File "/opt/ros/melodic/lib/uuv_assistants/create_new_robot_model", line 59, in <module>
-      for d in os.listdir(template_path):
-  OSError: [Errno 2] No such file or directory: '/opt/ros/melodic/share/uuv_assistants/templates/robot_model'
-  ```
+    - ```
+      Traceback (most recent call last):
+        File "/opt/ros/melodic/lib/uuv_assistants/create_new_robot_model", line 59, in <module>
+          for d in os.listdir(template_path):
+      OSError: [Errno 2] No such file or directory: '/opt/ros/melodic/share/uuv_assistants/templates/robot_model'
+      ```
 
-  hatalarını alırsanız 2. adımı yaptığınızdan emin olun.
-  
+      hatalarını alırsanız 2. adımı yaptığınızdan emin olun.
+
+
 ### Aracınızın tanım dosyası
 
-`uuv_assistants` paketindeki `create_new_robot_model` düğümü (node) `rosrun` fonksiyonuyla başlatıldıktan sonra `~/catkin_ws/src` klasörünün içinde `robot_name_description` dosyası oluşacaktır. Oluşturulan dosyanın içeriği aşağıdaki şekildedir.
+`uuv_assistants` paketindeki `create_new_robot_model` scripti çalıştırıldıktan sonra `~/catkin_ws/src` klasörünün içinde `<robot_name>_description` dosyası oluşacaktır. Oluşturulan dosyanın içeriği aşağıdaki şekildedir.
 
 ![chart_s](https://user-images.githubusercontent.com/84081125/118955306-3fe9f780-b967-11eb-9d5d-85313b591446.png)
 

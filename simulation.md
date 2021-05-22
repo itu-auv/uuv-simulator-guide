@@ -61,13 +61,6 @@ catkin build -- ituauv_uuv_descriptions
 source devel/setup.bash
 ```
 
-```sh
-# Daha sonrasında artık <robot_name>_description paketimizi derleyebiliriz
-catkin build -- <robot_name>_description
-
-# Paketi terminalimize tanıtıyoruz
-source devel/setup.bash
-```
 Bu noktaya gelindiğinde
 `catkin_ws/src/` klasörü altında 3 paket bulunması gerekmektedir
 ```
@@ -75,6 +68,17 @@ teknofest-simulator/
 ituauv-uuv-descriptions/
 <robot_name>_description/
 ```
+
+
+```sh
+# Daha sonrasında artık <robot_name>_description paketimizi derleyebiliriz
+catkin build -- <robot_name>_description
+# veya tüm paketleri derlemek için "catkin build"
+
+# Paketi terminalimize tanıtıyoruz
+source devel/setup.bash
+```
+
 
 Yukarıdaki işlemler tamamlandıktan sonra 
 

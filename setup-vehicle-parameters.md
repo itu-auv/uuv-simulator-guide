@@ -32,6 +32,16 @@ Bu bölümde araç üzerine etkiyen hidrostatik ve hidrodinamik etkilerin belirt
 - `urdf/base.xacro` 3D mesh, kütle, su yoğunluğu vs gibi etkilerin belirtildiği ve sensör/iticilere yönelik `.xacro` uzantılı dosyaların çağırıldığı dosya
 - `urdf/gazebo.xacro` hidrodinamik/hidrostatik etkilere yönelik parametrelerin belirlendiği dosya
 
+## Sonraki adımlar için
+Sonraki adımlarda kullanacağımız sensörler ve iticilerde, takımımız tarafından hazırlanan bazı
+snippet'lar bulunmaktadır. Bunlar sayesinde sensörün/iticinin ismini yazarak kolayca aracımıza 
+ekleyebileceğiz. Öncelikle bunların bulunduğu paketi, aracımıza tanıtmamız gerekmektedir.
+`urdf/base.xacro` içindeki, `include` bulunan bölümün sonuna aşağıdaki satır eklenerek bu işlem 
+gerçekleştirilmiş olur.
+```xml
+<xacro:include filename="$(find ituauv_uuv_descriptions)/urdf/snippets.xacro"/> 
+```
+  
 
 ## Kütle, Ağırlık Merkezi, Yoğunluk ve Eylemsizlik Momenti
 `urdf/base.xacro` içindeki, aşağıdaki bölümde

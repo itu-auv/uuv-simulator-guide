@@ -29,5 +29,5 @@ MIT, detaylar için [LICENSE](LICENSE)
 
 ## Yazarlar
 - Sencer Yazıcı - [senceryazici@gmail.com](mailto:senceryazici@gmail.com)
-- Ali Eren Karadag
+- Ali Eren Karadag - [aerenkaradag@gmail.com](mailto:aerenkaradag@gmail.com)
 - Zeynep Uyar

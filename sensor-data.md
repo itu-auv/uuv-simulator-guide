@@ -89,3 +89,4 @@ if __name__ == "__main__":
     rospy.spin()
 ```
 
+[Bir sonraki adımda](summary.md) bu kılavuza yönelik özeti inceleyeceğiz

@@ -8,7 +8,7 @@ Bu adımda simülasyon ortamının kurulumu & çalıştırılması anlatılacakt
 
 ## Simülasyon Ortamının Oluşturulması
 
-![Ekran Görüntüsü - 2021-05-22 15-15-51](https://user-images.githubusercontent.com/84081125/119228894-e677f900-bb1d-11eb-8fad-69367028fbe0.png)
+<img src="https://user-images.githubusercontent.com/84081125/119228894-e677f900-bb1d-11eb-8fad-69367028fbe0.png" width=80% height=80%>
 
 Teknofest 2021 İnsansız Sualtı Sistemleri Yarışması için hazırladığımız simülasyon ortamını indirmek için aşağıdakı komutlar çalıştırılmalıdır.
 ```sh

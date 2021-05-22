@@ -1,4 +1,8 @@
 # Sensörlerden Veri Alınması
+[bir önceki adıma](thruster-commanding.md) gidin.
+[anasayfaya](index.md) dönün.
+
+
 `uuv_simulator` üzerinde tanımladığınız araçta yerleştirilen sensörleri, `sensors.xacro` içinde gerekli parametrelerle tanımlamıştık. Bu tanımlamalar yapılırken topic parametresi örnek olarak şekildeki gibi verilmektedir
 
 ```xml

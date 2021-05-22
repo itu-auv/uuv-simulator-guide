@@ -1,4 +1,7 @@
 # İticilerin Kontrol Edilmesi
+[bir önceki adıma](simulation.md) gidin.
+[anasayfaya](index.md) dönün.
+
 Bu adımda simülasyon ortamında oluşturulan iticilerin kontrol edilmesi anlatılacaktır.
 
 Simülasyon ortamı çalıştırıldığında, 

@@ -1,4 +1,7 @@
 # Yeni Araç Oluşturulması
+[bir önceki adıma](uuv-basics.md) gidin.
+[anasayfaya](index.md) dönün.
+
 
 Bu bölümde `uuv_simulator` kullanarak yeni bir araç oluşturacağız. Burada araca ait bazı parametrelere
 ve bilgilere sahip olunması gerekirken bazıları da opsiyonel şekilde belirtilecektir. Ölçümü zor olan 

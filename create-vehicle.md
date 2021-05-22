@@ -1,5 +1,3 @@
-<!-- TODO: birini seç ve diğerini düzelt <robot_name> veya <aracinizin_ismi> -->
-
 # Yeni Araç Oluşturulması
 
 Bu bölümde `uuv_simulator` kullanarak yeni bir araç oluşturacağız. Burada araca ait bazı parametrelere
@@ -71,14 +69,15 @@ kullanabilirsiniz.
 
 
 ## ARAÇ OLUŞTURMA
-1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Kurulu değilse;
+<!-- uuv-basics.md'e taşındı ???
+1. Öncelikle `uuv_simulator` kurmadan önce `ros-<distro>-desktop-full` kurulu olduğundan emin olun. Rehberimiz `distro` olarak `melodic` kullanılarak oluşturulmuştur ve Gazebo uygulaması `ros-melodic-desktop-full` versiyonuyla birlikte gelmektedir. Kurulu değilse;
 
    ```
    sudo apt install ros-melodic-desktop-full
    ```
 
 2. ```
-   # uuv_simulator (Unmanned Underwater Vehicle Simulator) paket seti yüklenir
+   # uuv_simulator paket seti yüklenir
    sudo apt install ros-melodic-uuv-simulator
    
    # Gerekli paketler çalışma alanına klonlanıp yerele kopyalanır
@@ -93,11 +92,12 @@ kullanabilirsiniz.
    source devel/setup.bash
    ```
 
-3. ```
-   # Araç oluşturulur
+3. ??? -->
+   `uuv_simulator` kurulumu yapıldıktan sonra aşağıdaki kodla aracınızın tanım dosyası oluşturulur.
+   
+   ```
    cd ~/catkin_ws/src
-   rosrun uuv_assistants create_new_robot_model --robot_name <aracinizin_ismi>
-   # src adlı dosyada aracınızın tanım dosyası (aracinizin_ismi_description) oluşacaktır
+   rosrun uuv_assistants create_new_robot_model --robot_name <robot_name>
    ```
 
    *Örnek:* `rosrun uuv_assistants create_new_robot_model --robot_name test_robot`
@@ -156,6 +156,6 @@ kullanabilirsiniz.
   
 ### Aracınızın tanım dosyası
 
-`uuv_assistants` paketindeki `create_new_robot_model` düğümü (node) `rosrun` fonksiyonuyla başlatıldıktan sonra `~/catkin_ws/src` klasörünün içinde `aracinizin_ismi_description` dosyası oluşacaktır. Oluşturulan dosyanın içeriği aşağıdaki şekildedir.
+`uuv_assistants` paketindeki `create_new_robot_model` düğümü (node) `rosrun` fonksiyonuyla başlatıldıktan sonra `~/catkin_ws/src` klasörünün içinde `robot_name_description` dosyası oluşacaktır. Oluşturulan dosyanın içeriği aşağıdaki şekildedir.
 
 ![chart_s](https://user-images.githubusercontent.com/84081125/118955306-3fe9f780-b967-11eb-9d5d-85313b591446.png)

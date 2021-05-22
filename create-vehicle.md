@@ -170,11 +170,11 @@ Araç oluşturulduktan sonra bu kaynak kodu silebiliriz.
 │   └── README.md
 ├── package.xml
 ├── robots
-│   └── default.xacro *
+│   └── default.xacro
 └── urdf
     ├── actuators.xacro
-    ├── base.xacro *
-    ├── gazebo.xacro *
+    ├── base.xacro
+    ├── gazebo.xacro
     ├── sensors.xacro
     └── snippets.xacro
 ```

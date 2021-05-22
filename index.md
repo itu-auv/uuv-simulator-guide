@@ -1,5 +1,5 @@
 # Teknofest'21 UUV Simülatör Kılavuzu
-Teknofest 2021 yarışması için [İTÜ AUV Takımı](auv.itu.edu.tr) olarak hazırlamış olduğumuz `uuv_simulator` kılavuzudur. Bu 
+Teknofest 2021 yarışması için [İTÜ AUV Takımı](https://auv.itu.edu.tr) olarak hazırlamış olduğumuz `uuv_simulator` kılavuzudur. Bu 
 kılavuzda, araç oluşturmaktan simülasyon ortamı oluşturmaya ve kullanımına kadar bir çok detay anlatılmakdadır. 
 
 Bu kılavuzun amacı, gerçekçi bir fizik motoru ile simülasyon ortamı oluşturmak ve burada aracın üzerindeki hem hidrostatik hem de 

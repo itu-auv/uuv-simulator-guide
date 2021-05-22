@@ -1,4 +1,8 @@
 # Teknofest Simülasyon Ortamı Kurulumu ve Çalıştırılması
+[bir önceki adıma](setup-sensors.md) gidin.
+[anasayfaya](index.md) dönün.
+
+
 Bu adımda simülasyon ortamının kurulumu & çalıştırılması anlatılacaktır.
 
 

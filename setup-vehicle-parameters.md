@@ -154,7 +154,7 @@ aşağıdaki parametreleri kullanabilirsiniz, nitekim ortaya çıkan araçlar d�
 bu parametreler arasındaki farklılık ihmal edilebilir. (Aracın tasarımına göre bu durum değişmektedir. İhmal edilemeyecek düzeyde 
 farklılıklar da olabilir.)
 
-```
+```yml
 Added Mass:
 
 10.7727 0 0 0 0 0 

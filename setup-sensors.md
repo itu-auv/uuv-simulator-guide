@@ -1,4 +1,8 @@
 # Sensörlerin Konfigürasyonu
+
+[bir önceki adıma](setup-thrusters.md) gidin.
+[anasayfaya](index.md) dönün.
+
 `uuv_simulator` üzerinde sensörleri konfigüre etmek için `/<robot_name>_description/urdf/sensors.xacro` dosyasına gidilir. Burada
 örnek bir sensör yerleşimi için `/<robot_name>_description/urdf/sensors.xacro` içinde:
 ```xml

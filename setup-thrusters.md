@@ -1,4 +1,6 @@
 # İticilerin Konfigürasyonu
+[bir önceki adıma](setup-vehicle-parameters.md) gidin.
+[anasayfaya](index.md) dönün.
 
 `uuv_simulator`'de iticilerin oluşturulması ve konfigürasyonu için,
 

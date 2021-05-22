@@ -22,8 +22,8 @@ _Bilgi paylaştıkça çoğalır_
 
 [auv.itu.edu.tr](https://auv.itu.edu.tr) 
 
-
 <img src="https://assets.gitlab-static.net/uploads/-/system/group/avatar/3266773/logo.png?width=64"/>
+
 [twitter](https://twitter.com/ituauvteam) 
 [instagram](https://www.instagram.com/ituauvteam) 
 [linkedin](https://www.linkedin.com/company/itu-auv-team)
